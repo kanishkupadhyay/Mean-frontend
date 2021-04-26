@@ -1,0 +1,19 @@
+.user{
+    display: flex;
+    justify-content: center;
+}
+.user h1{
+    font-size: 50px;
+    margin-top: 40px;
+}
+.img-div{
+    display: flex;
+    justify-content: center;
+}
+.img-div img{
+    height: 300px;
+}
+.detail{
+    display: flex;
+    justify-content: center;
+}
