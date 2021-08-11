@@ -5,7 +5,7 @@ import { RegisterComponent } from './register/register.component';
 import {FormsModule}from '@angular/forms';
 import { UserDataComponent } from './user-data/user-data.component'
 import{RouterModule}from '@angular/router'
-
+import {MaterialModule}from '../material/material.module'
 @NgModule({
   declarations: [
     LoginComponent,
@@ -15,7 +15,8 @@ import{RouterModule}from '@angular/router'
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    MaterialModule
   ],
   exports:[LoginComponent,RegisterComponent,UserDataComponent]
 })

@@ -5,19 +5,22 @@ import { ParticularVideoComponent } from './particular-video/particular-video.co
 import {RouterModule}from '@angular/router'
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { SearchVideoComponent } from './search-video/search-video.component';
-
+import{MaterialModule}from '../material/material.module';
+import { CategoryDataComponent } from './category-data/category-data.component'
 @NgModule({
   declarations: [
     AllVideosComponent,
     ParticularVideoComponent,
-    SearchVideoComponent
+    SearchVideoComponent,
+    CategoryDataComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MaterialModule
   ],
   exports:[ParticularVideoComponent,
-  AllVideosComponent,SearchVideoComponent]
+  AllVideosComponent,SearchVideoComponent,CategoryDataComponent]
 })
 export class VideoModule { }

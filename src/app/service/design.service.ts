@@ -31,9 +31,16 @@ export class DesignService {
     localStorage.removeItem('user')
     localStorage.removeItem('mobile')
     localStorage.removeItem('email')
+    localStorage.removeItem('img')
     this.router.navigate(['/'])
   }
   searchMovie(name){
     return this.http.get(`http://localhost:4400/search/${name}`)
+  }
+  categoryData(){
+    return this.http.get('http://localhost:4400/category')
+  }
+  filterData(name){
+    return this.http.get(`http://localhost:4400/category/${name}`)
   }
 }

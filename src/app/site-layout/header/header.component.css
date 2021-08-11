@@ -58,11 +58,11 @@ body,html {
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
-  a:hover:after { 
+  a.links:hover:after { 
     width: 100%; 
     left: 0; 
   }
- 
+
   @media(max-width:660px){
       ul{
           display: flex;

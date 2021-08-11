@@ -5,19 +5,20 @@ import { FooterComponent } from './footer/footer.component';
 import {RouterModule}from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component'
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
   ],
   imports: [
     CommonModule,
     RouterModule,
-    NgbModule
+    NgbModule,
   ],
   exports:[HeaderComponent,FooterComponent,HomeComponent,ErrorComponent]
 })

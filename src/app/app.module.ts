@@ -11,7 +11,7 @@ import{VideoModule}from './video/video.module'
 import{HttpClientModule}from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 import{AuthGuard}from './auth-guard/auth.guard';
-
+import{MaterialModule}from './material/material.module'
 @NgModule({ 
   declarations: [
     AppComponent
@@ -27,6 +27,7 @@ import{AuthGuard}from './auth-guard/auth.guard';
     VideoModule,
     HttpClientModule,
     NgbModule,
+    MaterialModule
     // AuthGuard
   ],
   providers: [AuthGuard],

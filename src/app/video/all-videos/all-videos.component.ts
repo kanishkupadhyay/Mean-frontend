@@ -10,7 +10,12 @@ export class AllVideosComponent implements OnInit {
    images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
   movies:any=[]
   spinner:boolean=true
-  constructor(private design:DesignService) { }
+  category:any=[]
+  constructor(private design:DesignService) { 
+    this.design.categoryData().subscribe(data=>{
+      this.category=data
+    })
+  }
 
   ngOnInit(): void {
     this.design.getMovieDetail().subscribe(data=>{
